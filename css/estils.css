@@ -51,6 +51,11 @@ footer {
     text-decoration-color: white;
     padding-bottom: 10px;
 }
+footer ul li:not(:last-child):after { 
+    content: " \2022";
+    color: var(--blanc);
+    padding-left: 20px;  
+}
 h1{
     padding-top: 30px;
     margin-top: 0px;
@@ -87,6 +92,16 @@ article{
 }
 .link:hover {
     color: var(--negre);
+}
+.img {
+    width: 100%;
+}
+.img-full {
+    width: 100%;
+    height: 100%;
+}
+iframe {
+    border: 0px;
 }
 
 
@@ -198,6 +213,7 @@ h4 {
 }
 .text-left{
     text-align: left;
+    font-size: 2rem;
 }
 .section-index {
     display: flex;
@@ -250,6 +266,7 @@ h4 {
 .formulari h1{
     margin-bottom: unset;
     text-align: center;
+    font-size: 2.7rem;
 }
 .checkbox-input {
     outline: 1px solid;    
@@ -268,8 +285,8 @@ h4 {
     color: var(--blanc);
 }
 .form-size {
-    padding-left: 35%;
-    padding-right: 35%;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 
@@ -295,6 +312,10 @@ h4 {
     li {
         display: revert;
         padding-right: unset;
+    }
+
+    footer ul li:not(:last-child):after { 
+        content: unset;
     }
 
 
@@ -328,8 +349,9 @@ h4 {
 
     /*----------simptomes----------*/
     .article-simptomes {
-        display: unset;
+        display: revert;
         flex-wrap: unset;
+        padding: 10px;
     }
     .seccio-text {
         padding-top: unset;
